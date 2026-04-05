@@ -1,0 +1,30 @@
+# Environments
+.env
+.env.*
+!.env.example
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Data & Uploads
+uploads/
+*.pdf
+*.docx
+*.txt
+
+# AI Caches
+.qwen/
+.gemini/
+.vector_cache/
+faiss_index/
+*.index
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# macOS
+.DS_Store

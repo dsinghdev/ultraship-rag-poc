@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 *)",
+      "Bash(pip3 install *)",
+      "Bash(mkdir *)",
+      "Bash(docker-compose *)",
+      "Bash(docker ps *)",
+      "Bash(curl *)",
+      "Bash(xargs *)",
+      "Bash(true)",
+      "Bash(sleep *)",
+      "Bash(lsof *)",
+      "Bash(docker logs *)"
+    ]
+  },
+  "$version": 3
+}

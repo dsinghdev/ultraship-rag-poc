@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  # Single container for both API and UI
+  ultraship:
+    build: .
+    container_name: ultraship_ai
+    ports:
+      - "5001:8000"
+      - "8510:8510"
+    environment:
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+      - API_BASE_URL=http://localhost:8000
+    volumes:
+      - ./uploads:/app/uploads
+    command: /startup.sh
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 60s
+      timeout: 30s
+      retries: 3
+      start_period: 20s
+    networks:
+      - ultraship_network
+    restart: unless-stopped
+
+networks:
+  ultraship_network:
+    driver: bridge
