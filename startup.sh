@@ -9,13 +9,13 @@ API_PID=$!
 sleep 3
 
 # Start Streamlit
-echo "🎨 Starting Streamlit UI on port 8510..."
-streamlit run app/streamlit_app.py --server.port=8510 --server.address=0.0.0.0 --server.headless=true &
+echo "🎨 Starting Streamlit UI on port ${PORT:-8510}..."
+streamlit run app/streamlit_app.py --server.port=${PORT:-8510} --server.address=0.0.0.0 --server.headless=true &
 STREAMLIT_PID=$!
 
 echo "✅ Both services started!"
 echo "📡 API: http://localhost:8000"
-echo "🎨 UI: http://localhost:8510"
+echo "🎨 UI: http://localhost:${PORT:-8510}"
 
 # Wait for both processes
 wait $API_PID $STREAMLIT_PID
