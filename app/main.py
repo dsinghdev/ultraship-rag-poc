@@ -19,7 +19,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-app = FastAPI(title="Ultra Doc-Intelligence API", version="1.0.0")
+app = FastAPI(title="Logistics AI Assistant API", version="1.0.0")
 
 # CORS middleware
 app.add_middleware(

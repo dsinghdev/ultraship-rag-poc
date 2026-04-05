@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Ultra Doc-Intelligence - Local Development Script
+# Logistics AI Assistant - Local Development Script
 
-echo "🚢 Ultra Doc-Intelligence - Starting Local Development"
+echo "🚢 Logistics AI Assistant - Starting Local Development"
 echo "======================================================"
 
 # Check if .env file exists

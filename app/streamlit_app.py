@@ -8,7 +8,7 @@ from datetime import datetime
 API_BASE_URL = os.getenv("API_BASE_URL", "http://localhost:5001")
 
 st.set_page_config(
-    page_title="Ultra Doc-Intelligence",
+    page_title="Logistics AI Assistant",
     page_icon="🚢",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -146,7 +146,7 @@ def render_confidence_badge(confidence):
 
 def main():
     # Header
-    st.markdown('<div class="main-header">🚢 Ultra Doc-Intelligence</div>', unsafe_allow_html=True)
+    st.markdown('<div class="main-header">🚢 Logistics AI Assistant</div>', unsafe_allow_html=True)
     st.markdown('<div class="sub-header">AI-powered logistics document analysis and Q&A system</div>', unsafe_allow_html=True)
     
     # API Health and Document Status Check
@@ -318,7 +318,7 @@ def main():
     
     # Footer
     st.markdown("---")
-    st.caption("Ultra Doc-Intelligence POC | Built with Streamlit, FastAPI, and RAG")
+    st.caption("Logistics AI Assistant POC | Built with Streamlit, FastAPI, and RAG")
 
 
 if __name__ == "__main__":

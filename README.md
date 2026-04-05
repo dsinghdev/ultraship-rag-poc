@@ -1,10 +1,10 @@
-# 🚢 Ultra Doc-Intelligence
+# 🚢 Logistics AI Assistant
 
 AI-powered logistics document analysis and Q&A system built with RAG (Retrieval-Augmented Generation) technology.
 
 ## 📋 Overview
 
-Ultra Doc-Intelligence is a POC AI system that allows users to upload logistics documents (PDF, DOCX, TXT) and interact with them using natural language questions. The system retrieves relevant content, answers grounded questions, applies guardrails, and returns confidence scores — simulating an AI assistant inside a Transportation Management System (TMS).
+Logistics AI Assistant is a POC AI system that allows users to upload logistics documents (PDF, DOCX, TXT) and interact with them using natural language questions. The system retrieves relevant content, answers grounded questions, applies guardrails, and returns confidence scores — simulating an AI assistant inside a Transportation Management System (TMS).
 
 ## ✨ Features
 
@@ -94,7 +94,7 @@ Ultra Doc-Intelligence is a POC AI system that allows users to upload logistics 
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd ultraship_ai
+   cd logistics_ai_ai
    ```
 
 2. **Set up environment**
@@ -461,7 +461,7 @@ Test with logistics documents such as:
 ## 📁 Project Structure
 
 ```
-ultraship_ai/
+logistics_ai_ai/
 ├── app/
 │   ├── __init__.py
 │   ├── config.py                  # Configuration settings

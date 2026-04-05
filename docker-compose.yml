@@ -2,9 +2,9 @@ version: '3.8'
 
 services:
   # Single container for both API and UI
-  ultraship:
+  logistics_ai:
     build: .
-    container_name: ultraship_ai
+    container_name: logistics_ai_ai
     ports:
       - "5001:8000"
       - "8510:8510"
@@ -21,9 +21,9 @@ services:
       retries: 3
       start_period: 20s
     networks:
-      - ultraship_network
+      - logistics_ai_network
     restart: unless-stopped
 
 networks:
-  ultraship_network:
+  logistics_ai_network:
     driver: bridge
