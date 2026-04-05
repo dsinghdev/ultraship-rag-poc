@@ -28,8 +28,7 @@ COPY . .
 # Create uploads directory
 RUN mkdir -p uploads
 
-# Expose ports
-EXPOSE 8000 8510
+# Ports managed dynamically by Render
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
